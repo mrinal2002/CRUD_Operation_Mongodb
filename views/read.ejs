@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(221, 32, 215);"> 
+    <h1>See all your Collections</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Id</th>
+            <th>Department</th>
+            <th>Occupation</th>
+        </tr>
+       
+            <%Data.forEach((item)=>{%>
+                <tr>
+                <td><%=item.name%></td>
+                <td><%=item.userid%></td>
+                <td><%=item.dept%></td>
+                <td><%=item.occupation%></td>
+            </tr>
+            <%})%>
+        
+    </table>
+    <br>
+    <button><h1><a href="/dashboard">Go to Dashboard</a></h1></button>
+</body>
+</html>
